@@ -1,27 +1,20 @@
-
-import Home from "../components/Home"
-import { Button } from "@nextui-org/react"
-import Log from "../components/Log"
-import Register from "../components/create"
-import UserPage from "../components/userPage"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./pages/Home"
+// import Register from "./pages/Register"
+import Login from "./pages/Login"
+import isLoggedIn from "./utils/sessionVerifier"
+import { Toaster } from "react-hot-toast"
 
 function App() {
   return (
-    <>
-    <UserPage/>
-    {/* <Register/> */}
-    {/* <Log/> */}
-      {/* <div style={{ backgroundImage: "url('./tor.jpg')" }} className="w-full h-full absolute">
-        <div className="text-center p-10 " >
-          <h1 className="font-bold font-fantasy text-4xl text-white">Wanderwise</h1>
-          <h1 className="text-center text-2xl font-bold text-[#b4d330]">App</h1>
-        </div>
-        <div>
-          <Button className="bg-[#b4d330] w-[350px] ml-7 absolute text-white mt-[650px] text-xl py-7">Let Started</Button>
-        </div>
-      </div> */}
-    </>
-
+    <BrowserRouter>
+      <Toaster />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        {/* <Route path="/register" element={<Register />} /> */}
+      </Routes>
+    </BrowserRouter>
   )
 }
 

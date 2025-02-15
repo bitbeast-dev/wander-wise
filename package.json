@@ -1,0 +1,32 @@
+{
+  "name": "big",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@nextui-org/react": "^2.4.8",
+    "axios": "^1.7.9",
+    "express": "^4.21.2",
+    "framer-motion": "^11.11.15",
+    "pocketbase": "^0.25.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.1.2",
+    "react-webcam": "^7.2.0",
+    "sweetalert2": "^11.16.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.14",
+    "vite": "^4.1.0"
+  }
+}
